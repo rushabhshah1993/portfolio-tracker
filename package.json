@@ -1,0 +1,50 @@
+{
+  "name": "portfolio-tracker",
+  "version": "1.0.0",
+  "description": "A simple tool for viewing, editing, and tracking your latest financial portfolio.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rushabhshah1993/portfolio-tracker.git"
+  },
+  "author": "Rushabh Mulraj Shah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rushabhshah1993/portfolio-tracker/issues"
+  },
+  "homepage": "https://github.com/rushabhshah1993/portfolio-tracker#readme",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "babel-loader": "^8.2.4",
+    "css-loader": "^6.7.1",
+    "file-loader": "^6.2.0",
+    "lodash": "^4.17.21",
+    "node-sass": "^7.0.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-redux": "^7.2.8",
+    "react-router-dom": "^6.3.0",
+    "redux": "^4.1.2",
+    "redux-thunk": "^2.4.1",
+    "sass-loader": "^12.6.0",
+    "style-loader": "^3.3.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.9",
+    "@babel/node": "^7.16.8",
+    "@babel/plugin-proposal-class-properties": "^7.16.7",
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "html-webpack-plugin": "^5.5.0",
+    "path": "^0.12.7",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.8.1"
+  }
+}

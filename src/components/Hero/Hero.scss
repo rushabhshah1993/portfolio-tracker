@@ -1,0 +1,27 @@
+.heroContainer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+    border: 1px solid #EEE;
+
+    .imgContainer {
+        display: flex;
+        justify-content: center;
+
+        img {
+            height: 25vh;
+        }
+    }
+
+    .infoContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1rem;
+
+        .title {
+            margin-bottom: 0;
+        }
+    }
+}
