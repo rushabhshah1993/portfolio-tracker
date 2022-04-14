@@ -8,7 +8,7 @@ import { BrowserRouter } from 'react-router-dom';
 import store from './store';
 
 /* Components imports */
-import Home from './pages/Home';
+import Home from './pages/Home/Home';
 
 /* Style imports */
 import './index.scss';

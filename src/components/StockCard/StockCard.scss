@@ -1,0 +1,16 @@
+.stockCard {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .price {
+        color: #A9A9A9;
+    }
+}
