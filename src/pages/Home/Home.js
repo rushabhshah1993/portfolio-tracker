@@ -11,15 +11,15 @@ import TopStocks from '../../components/TopStocks/TopStocks';
 import styles from './Home.scss';
 
 /* File imports */
-import { fetchStockDetails } from '../../store/actions/stocksActions';
+import { fetchStockInfo } from '../../store/actions/stocksActions';
 import SearchStocks from '../../components/SearchStocks/SearchStocks';
 
 export class Home extends Component {
     componentDidMount() {
         /* Fetch data of default stocks */
-        if(this.props.defaultStockSymbols) {
+        if(this.props.defaultStockSymbols && this.props.defaultStocks.length === 0) {
             for(let symbol of this.props.defaultStockSymbols) {
-                this.props.fetchStockDetails(symbol);
+                this.props.fetchStockInfo(symbol);
             }
         }
     }
@@ -42,13 +42,14 @@ export class Home extends Component {
 
 const mapStateToProps = state => {
     return {
-        defaultStockSymbols: state.stocks.defaultStockSymbols
+        defaultStockSymbols: state.stocks.defaultStockSymbols,
+        defaultStocks: state.stocks.defaultStocks
     }
 }
 
 const mapDispatchToProps = dispatch => {
     return {
-        fetchStockDetails: symbol => dispatch(fetchStockDetails(symbol))
+        fetchStockInfo: symbol => dispatch(fetchStockInfo(symbol))
     }
 }
 

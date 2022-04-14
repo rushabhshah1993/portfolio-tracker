@@ -10,6 +10,7 @@
     .searchContainer {
         display: flex;
         position: relative;
+        margin-bottom: 1rem;
 
         .searchBox {
             width: 100%;
@@ -29,6 +30,7 @@
             height: 20px;
             position: absolute;
             right: 0;
+            cursor: pointer;
         }
     }
 

@@ -1,0 +1,61 @@
+.content {
+    margin: 1rem 10%;
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .address {
+        color: #A9A9A9;
+    }
+
+    .desc {
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #EAEAEA;
+    }
+    
+    .infoContainer {
+        border-bottom: 1px solid #EAEAEA;
+
+        .infoRow {
+            .key {
+                font-weight: bold;
+            }
+        }
+    }
+
+    .dailyContainer {
+        .infoRow {
+            .key {
+                font-weight: bold;
+            }
+        }
+
+        .allData {
+            .timeZone {
+                border-bottom: 1px solid #EAEAEA;
+
+                &:last-child {
+                    border-bottom: 0px;
+                }
+
+                .time {
+                    font-size: 1.5rem;
+                    margin-bottom: 8px;
+                }
+
+                .data {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .section {
+                        .title {
+                            font-size: 1.25rem;
+                            margin-top: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,12 +1,20 @@
 /* Package imports */
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 /* Style imports */
 import styles from './SearchCard.scss';
 
 const SearchCard = props => {
+    let navigate = useNavigate();
+
+    const navigateToStock = () => {
+        let symbol = props.stock['1. symbol'];
+        navigate(`/stock/${symbol}`);
+    }
+
     return (
-        <div className={styles.searchCard}>
+        <div className={styles.searchCard} onClick={navigateToStock}>
             <div className={styles.header}>
                 <div className={styles.stockInfo}>
                     <p className={styles.symbol}>{props.stock['1. symbol']}</p>
