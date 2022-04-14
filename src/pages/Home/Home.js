@@ -12,6 +12,7 @@ import styles from './Home.scss';
 
 /* File imports */
 import { fetchStockDetails } from '../../store/actions/stocksActions';
+import SearchStocks from '../../components/SearchStocks/SearchStocks';
 
 export class Home extends Component {
     componentDidMount() {
@@ -29,7 +30,10 @@ export class Home extends Component {
                 <NavigationBar />
                 <div className={styles.content}>
                     <Hero />
-                    <TopStocks />
+                    <div className={styles.mainContent}>
+                        <SearchStocks />
+                        <TopStocks />
+                    </div>
                 </div>
             </div>
         )

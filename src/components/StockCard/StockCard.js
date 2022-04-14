@@ -5,7 +5,6 @@ import React from 'react';
 import styles from './StockCard.scss';
 
 const StockCard = props => {
-    console.log(props);
     let stockInfo = props.stock['Global Quote'];
     return (
         <div className={styles.stockCard}>

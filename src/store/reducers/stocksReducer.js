@@ -10,7 +10,10 @@ const initialState = {
     defaultStocks: [],
     defaultStocksFetch: false,
     defaultStocksFetchComplete: false,
-    defaultStocksFetchFail: false
+    defaultStocksFetchFail: false,
+    searchRequestStart: false,
+    searchRequestFail: false,
+    searchRequestComplete: false
 };
 
 const reducer = (state = initialState, action) => {
@@ -36,6 +39,19 @@ const reducer = (state = initialState, action) => {
                 clonedState.defaultStocksFetch = false;
                 clonedState.defaultStocksFetchComplete = true;
             }
+            return clonedState;
+        case actions.SEARCH_REQUEST:
+            clonedState.searchRequestStart = true;
+            return clonedState;
+        case actions.SEARCH_REQUEST_FAIL:
+            clonedState.searchRequestStart = false;
+            clonedState.searchRequestComplete = true;
+            clonedState.searchRequestFail = true;
+            return clonedState;
+        case actions.SEARCH_REQUEST_SUCCESS:
+            clonedState.watchedStocks = cloneDeep(action.payload);
+            clonedState.searchRequestStart = false;
+            clonedState.searchRequestComplete = true;
             return clonedState;
         default: return state;
     }

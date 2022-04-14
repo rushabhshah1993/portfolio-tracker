@@ -1,0 +1,63 @@
+.searchCard {
+    padding: 8px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    cursor: pointer;
+
+    .header {
+        display: grid;
+        grid-template-columns: 68% 28%;
+        column-gap: 4%;
+
+        .stockInfo {
+            .symbol {
+                font-size: 1.5rem;
+                margin-bottom: 0;
+            }
+
+            .name {
+                font-size: 1.25rem;
+                color: #A9A9A9;
+                margin-top: 0;
+            }
+        }
+
+        .locationInfo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .region {
+                font-size: 1.3rem;
+                margin-right: 4px;
+            }
+
+            .timezone {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .otherInfoContainer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 8px;
+
+        .section {
+            display: flex;
+            flex-direction: column;
+            
+            .title {
+                font-size: 14px;
+                color: #A9A9A9;
+                margin-bottom: 4px;
+            }
+
+            .value {
+                font-size: 1.25rem;
+                margin-top: 0;
+            }
+        }
+    }
+}
