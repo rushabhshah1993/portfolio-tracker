@@ -1,7 +1,7 @@
 /* Package imports */
 import {
     createStore, combineReducers,
-    applyMiddleware, componse
+    applyMiddleware, compose
 } from 'redux';
 import thunk from 'redux-thunk';
 
